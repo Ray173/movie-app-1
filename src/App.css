@@ -1,0 +1,50 @@
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 17%;
+    gap: 5px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4a586d;
+}
+
+::-webkit-scrollbar {
+  width: .7em;
+  height: .7em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1f2937;
+}
+
+@media only screen and (max-width: 1400px) {
+    .carousel {
+        grid-auto-columns: 25%;
+    }
+  }
+
+  @media only screen and (max-width: 993px) {
+    .carousel {
+        grid-auto-columns: 30%;
+    }
+  }
+  @media only screen and (max-width: 781px) {
+    .carousel {
+        grid-auto-columns: 40%;
+    }
+  }
+  @media only screen and (max-width: 631px) {
+    .carousel {
+        grid-auto-columns: 50%;
+    }
+  }
+  @media only screen and (max-width: 467px) {
+    .carousel {
+        grid-auto-columns: 80%;
+    }
+  }
+  
+
